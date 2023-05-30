@@ -58,7 +58,8 @@ const App = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("values:", setValues)
+    console.log(values)
+
   };
 
   const onChange = (e) => {
@@ -80,6 +81,7 @@ const App = () => {
           <FormInput
 
             key={input.id}
+            name={input.name}
             {...input}
             value={values[input.name]}
             onChange={onChange}
